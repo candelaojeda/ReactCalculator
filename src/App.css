@@ -1,3 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap');
+*{
+  font-family: 'Encode Sans SC', sans-serif;
+  font-size: 30px;
+  background: linear-gradient(to left, #e492cf, #940551);
+}
 body{
-  background: linear-gradient(to left, #e492cf, #b11267);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  background: #520930;
+  color: #e492cf;
+  letter-spacing: 3px;
+}
+.container{
+  border-radius: 10px;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 10px solid #520930;
+  background: #520930;
+  width: 400px;
+}
+.keys{
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-auto-rows: minmax(85px, auto);
+}
+button{
+  margin: 3px;
+  border-radius: 6px;
+  border-color: #30051c;
+  cursor: pointer;
+  color: #30051c;
+
+}
+input[type="text"]{
+  height: 55px;
+  width: 390px;
+  background-color: #520930;
+  border: 0px;
+  outline: none;
+  color: #46031f;
+  margin-bottom: 5px;
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-align: right;
+}
+#equal{
+  grid-column: 3/5;
+  grid-row: 5;
+}
+#keydelete{
+  grid-column: 1/3;
+  color: #f8eff4;
+  font-size: 20px;
+}
+#clean{
+  color: #f8eff4;
+  font-size: 20px;
 }
